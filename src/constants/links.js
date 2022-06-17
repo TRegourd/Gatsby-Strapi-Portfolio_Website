@@ -1,3 +1,6 @@
+import React from "react";
+import { Link } from "gatsby";
+
 const data = [
   {
     id: 1,
@@ -19,6 +22,18 @@ const data = [
     text: "contact",
     url: "/contact/",
   },
-]
+];
 
-export default data
+const links = data.map((link) => {
+  return (
+    <li>
+      <Link to={link.url}>{link.text}</Link>
+    </li>
+  );
+});
+
+export default ({ styleClass }) => {
+  return (
+    <ul className={`page-links ${styleClass ? styleClass : ""}`}>{links}</ul>
+  );
+};
