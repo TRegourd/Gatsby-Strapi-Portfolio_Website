@@ -32,8 +32,8 @@ const links = data.map((link) => {
   );
 });
 
-export default ({ styleClass }) => {
+export default function PageLinks({ styleClass }) {
   return (
     <ul className={`page-links ${styleClass ? styleClass : ""}`}>{links}</ul>
   );
-};
+}

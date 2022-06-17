@@ -2,7 +2,6 @@ import React from "react";
 import logo from "../assets/images/logo.svg";
 import { FaAlignRight } from "react-icons/fa";
 import PageLinks from "../constants/links";
-import { Link } from "gatsby";
 
 export default function Navbar() {
   return (
