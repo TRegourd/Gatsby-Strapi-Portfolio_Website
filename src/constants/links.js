@@ -26,7 +26,7 @@ const data = [
 
 const links = data.map((link) => {
   return (
-    <li>
+    <li key={link.id}>
       <Link to={link.url}>{link.text}</Link>
     </li>
   );

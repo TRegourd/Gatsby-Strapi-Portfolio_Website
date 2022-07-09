@@ -9,7 +9,9 @@ import Layout from "../components/Layout";
 const IndexPage = () => {
   return (
     <>
-      <Layout>Gatsby Strapi Portfolio Starter</Layout>
+      <Layout>
+        <Hero />
+      </Layout>
     </>
   );
 };
